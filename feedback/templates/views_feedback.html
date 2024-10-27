@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Feedbacks</title>
+</head>
+<body>
+    <h1>Feedbacks</h1>
+    <ul>
+        {% for feedback in feedbacks %}
+            <li>{{ feedback.name }}: {{ feedback.feedback_details }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
